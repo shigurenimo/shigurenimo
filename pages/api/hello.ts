@@ -1,9 +1,11 @@
-import { NextApiRequest, NextApiResponse } from 'next'
+import { NextApiHandler } from 'next'
 
 type Data = { name: string }
 
-export default (req: NextApiRequest, res: NextApiResponse<Data>) => {
+const handler: NextApiHandler<Data> = (req, res) => {
   res.statusCode = 200
 
   return res.json({ name: 'John Doe' })
 }
+
+export default handler
