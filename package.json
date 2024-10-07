@@ -1,30 +1,11 @@
 {
-  "name": "reiwa",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "next": "9.3.6",
-    "postcss-preset-env": "^6.7.0",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "tailwindcss": "^1.4.4"
-  },
+  "name": "shigurenimo",
+  "module": "index.ts",
+  "type": "module",
   "devDependencies": {
-    "@types/node": "^13.13.4",
-    "@types/react": "^16.9.34",
-    "husky": "^4.2.3",
-    "prettier": "^2.0.5",
-    "pretty-quick": "^2.0.1",
-    "typescript": "^3.8.3"
+    "@types/bun": "latest"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
+  "peerDependencies": {
+    "typescript": "^5.0.0"
   }
 }
