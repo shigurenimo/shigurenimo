@@ -1,0 +1,13 @@
+#:schema ../node_modules/wrangler/config-schema.json
+
+name = "shigureni"
+compatibility_date = "2024-09-09"
+main = "index.ts"
+assets = { directory = "./dist" }
+
+[observability]
+enabled = true
+
+[[routes]]
+pattern = "shigureni.dev"
+custom_domain = true
