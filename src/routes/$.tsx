@@ -47,7 +47,7 @@ function Component() {
 
   return (
     <main className="flex h-svh flex-1 flex-col lg:overflow-hidden">
-      <div className="sticky top-0 left-0 z-10 w-svw bg-card">
+      <div className="sticky top-0 left-0 z-10 bg-card">
         <div className="flex items-center justify-between gap-2 px-4 py-2">
           <span>{file?.name}</span>
           <Button size={"sm"} variant={"outline"}>
